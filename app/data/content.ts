@@ -12,10 +12,10 @@ export const profile = {
 };
 
 export const navLinks = [
-  { label: "Portfolio", href: "#works" },
-  { label: "FAQs", href: "#faq" },
-  { label: "Pricing", href: "#pricing" },
-  { label: "Contact", href: "#contact-section" },
+  { label: "Portfolio", href: "/#works" },
+  { label: "FAQs", href: "/#faq" },
+  { label: "Pricing", href: "/#pricing" },
+  { label: "Contact", href: "/#contact-section" },
 ];
 
 export const works = {
@@ -105,8 +105,8 @@ export const pricing = {
       features: ["1-12 Pages", "2 Full Design Concepts", "Illustrations-Animations", "Framer Development", "Support"],
     },
     {
-      badge: "Product Design",
-      title: "UI/UX Design",
+      badge: "UI/UX Design",
+      title: "Product Design",
       price: "$4000",
       cta: { label: "Get In Touch", href: "#contact-section" },
       features: ["Mobile App or Dashboard", "Design Concepts", "UX Research", "Development", "Support"],
@@ -119,18 +119,66 @@ export const contact = {
   heading: "Get In Touch",
   body: "We discussed your project in detail, including your goals and requirements.",
   bookingUrl: "https://cal.com/framer-placeholder/default",
+  formTabs: ["Send a Message", "Book a Call"],
+  form: {
+    nameLabel: "Name",
+    namePlaceholder: "Jane Smith",
+    emailLabel: "Email",
+    emailPlaceholder: "jane@framer.com",
+    designLabel: "What design are you looking for?",
+    designPlaceholder: "e.g.: App design, Website design…",
+    messageLabel: "Message (about your project)",
+    messagePlaceholder: "Your Message",
+    submit: "Submit",
+  },
   testimonials: [
-    { quote: "Outstanding service and rapid delivery. The completed website looked exactly perfect.", name: "Adam K.", role: "Business Owner" },
-    { quote: "Great communication and fast delivery. The final design matched exactly what we wanted.", name: "Edward D.", role: "Creative Strategist" },
-    { quote: "Very helpful team and super fast updates. The final graphics came out beautifully. Thanks", name: "Anna E.", role: "Entrepreneur" },
-    { quote: "Amazing quality and excellent timing. The finished project was exactly as requested.", name: "Edward D.", role: "Creative Strategist" },
+    { quote: "Outstanding service and rapid delivery. The completed website looked exactly perfect.", name: "Adam K.", role: "Business Owner", avatar: "/framer/avatar-adam.png" },
+    { quote: "Great communication and fast delivery. The final design matched exactly what we wanted.", name: "Edward D.", role: "Creative Strategist", avatar: "/framer/avatar-edward.png" },
+    { quote: "Very helpful team and super fast updates. The final graphics came out beautifully. Thanks", name: "Anna E.", role: "Entrepreneur", avatar: "/framer/avatar-anna.png" },
+    { quote: "Amazing quality and excellent timing. The finished project was exactly as requested.", name: "Edward D.", role: "Creative Strategist", avatar: "/framer/avatar-edward.png" },
   ],
 };
 
 export const footer = {
   name: "Emili Hearth",
-  subtitle: "Designer Portfolio",
+  tag: "#Hire me",
+  heading: "Get in touch today and let’s get started.",
+  body: "So we can discuss the details",
+  cta: { label: "Get In Touch", href: "/contact-page" },
+  socialsLabel: "Socials Media",
+  socials: [
+    { label: "Twitter/X", href: "https://x.com" },
+    { label: "Instagarm", href: "https://instagram.com" },
+    { label: "Framer", href: "https://framer.com" },
+  ],
+  columns: [
+    {
+      title: "Pages",
+      links: [
+        { label: "Home", href: "#hero" },
+        { label: "Contact", href: "#contact-section" },
+        { label: "404", href: "/404-page" },
+      ],
+    },
+    {
+      title: "Quick Links",
+      links: [
+        { label: "Portfolio", href: "#works" },
+        { label: "FAQs", href: "#faq" },
+        { label: "Pricing", href: "#pricing" },
+        { label: "Contact", href: "#contact-section" },
+      ],
+    },
+    {
+      title: "Projects",
+      links: [
+        { label: "SaaS Website", href: "/projects/saas-website" },
+        { label: "AI Website", href: "/projects/ai-website" },
+        { label: "E-com Website", href: "/projects/e-commerce-website" },
+        { label: "Designer Portfolio", href: "/projects/designer-portfolio" },
+      ],
+    },
+  ],
+  copyright: "©2026 Portfolio. All rights reserved.",
   credit: "Designed by @ItsPeterDesign",
-  navLinks,
-  socials: [{ label: "Instagram", href: "https://instagram.com" }],
 };

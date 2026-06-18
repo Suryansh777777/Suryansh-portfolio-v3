@@ -5,7 +5,7 @@ export function Navigation() {
   return (
     <header className="absolute inset-x-0 top-0 z-50">
       <nav className="mx-auto flex max-w-[1200px] items-center justify-between px-6 py-5 md:px-20">
-        <Link href="#hero" className="font-serif text-[1.9rem] italic leading-none text-black-1">
+        <Link href="/" className="font-serif text-[1.9rem] italic leading-none text-black-1">
           Emili
         </Link>
 

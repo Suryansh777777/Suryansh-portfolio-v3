@@ -26,6 +26,28 @@
 
   --spacing-page: 1200px;
   --ease-framer: cubic-bezier(0.44, 0, 0.18, 1);
+
+  --animate-marquee: marquee 30s linear infinite;
+  --animate-marquee-reverse: marquee 30s linear infinite reverse;
+  --animate-marquee-y: marquee-y 24s linear infinite;
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes marquee-y {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-50%);
+  }
 }
 
 /* ---- Type scale (Framer TextStyles) --------------------------------------- */
